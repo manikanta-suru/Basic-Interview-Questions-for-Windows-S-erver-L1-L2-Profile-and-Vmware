@@ -1,5 +1,3 @@
-Certainly! Here are the answers to the troubleshooting questions for macOS:
-
 ### 1. What steps would you take if a Mac is running slowly?
 - **Check Activity Monitor:** Identify and close resource-intensive applications or processes.
 - **Free Up Disk Space:** Remove unnecessary files and applications.
