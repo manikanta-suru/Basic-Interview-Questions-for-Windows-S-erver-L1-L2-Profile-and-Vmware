@@ -972,3 +972,61 @@ FSMO roles can be transferred using the GUI tools or the command line. Below are
    Replace `<NewDCName>` with the name of the new DC.
 
 By following these steps, you can successfully transfer FSMO roles in Active Directory. Always ensure you have a good backup and have planned the transfer process to minimize disruptions in your environment.
+
+
+The default port numbers for various services used by Windows Active Directory are crucial for network communication and management. Here are the key default port numbers:
+
+### Active Directory Ports
+
+1. **LDAP (Lightweight Directory Access Protocol)**
+   - **Port 389 (TCP/UDP):** Used for LDAP communications.
+   - **Port 636 (TCP):** Used for secure LDAP (LDAPS) communications over SSL/TLS.
+
+2. **Global Catalog**
+   - **Port 3268 (TCP):** Used for Global Catalog LDAP queries.
+   - **Port 3269 (TCP):** Used for secure Global Catalog LDAP queries over SSL/TLS.
+
+3. **Kerberos**
+   - **Port 88 (TCP/UDP):** Used for Kerberos authentication.
+
+4. **DNS (Domain Name System)**
+   - **Port 53 (TCP/UDP):** Used for DNS queries.
+
+5. **SMB (Server Message Block)**
+   - **Port 445 (TCP):** Used for SMB/CIFS file sharing and other network services.
+
+6. **RPC (Remote Procedure Call)**
+   - **Port 135 (TCP/UDP):** Used for RPC Endpoint Mapper.
+   - **Dynamic RPC Ports (TCP):** Typically in the range of 49152 to 65535 for RPC communication.
+
+7. **NetBIOS**
+   - **Port 137 (UDP):** Used for NetBIOS name service.
+   - **Port 138 (UDP):** Used for NetBIOS datagram service.
+   - **Port 139 (TCP):** Used for NetBIOS session service.
+
+8. **LDAP over SSL (LDAPS)**
+   - **Port 636 (TCP):** Used for LDAP over SSL.
+
+### Summary of Default Ports
+
+| Service          | Port Number (TCP/UDP)  | Description                                        |
+|------------------|------------------------|----------------------------------------------------|
+| LDAP             | 389                    | LDAP communication                                 |
+| LDAPS            | 636                    | LDAP communication over SSL                        |
+| Global Catalog   | 3268                   | Global Catalog queries                             |
+| Global Catalog (SSL) | 3269                | Secure Global Catalog queries over SSL             |
+| Kerberos         | 88                     | Kerberos authentication                            |
+| DNS              | 53                     | DNS queries                                        |
+| SMB              | 445                    | SMB/CIFS file sharing                              |
+| RPC Endpoint Mapper | 135                 | RPC Endpoint Mapper                                |
+| Dynamic RPC Ports | 49152-65535 (varies)  | Dynamic RPC communication                          |
+| NetBIOS Name Service | 137 (UDP)          | NetBIOS name service                               |
+| NetBIOS Datagram Service | 138 (UDP)      | NetBIOS datagram service                           |
+| NetBIOS Session Service | 139 (TCP)       | NetBIOS session service                            |
+
+### Additional Notes
+
+- **Dynamic RPC Ports**: By default, Windows uses dynamic port ranges for RPC services. These ports are allocated dynamically and can vary, typically in the range of 49152 to 65535 on Windows Server 2008 and later. You can modify this range via the registry if needed.
+- **Global Catalog Ports**: These are particularly important in multi-domain forest environments for speeding up the search and login processes.
+
+Understanding these ports is essential for configuring firewalls and network security to ensure that Active Directory services operate smoothly. If you have specific scenarios or questions regarding these ports, feel free to ask!
