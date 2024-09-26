@@ -139,47 +139,58 @@ AWS Step Functions is a serverless orchestration service in AWS that coordinates
 ### 40. Discuss The Benefits Of Using Amazon CloudFront.
 Amazon CloudFront is a content delivery network (CDN) service in AWS that speeds up the delivery of web content using AWS Global Network Infrastructure. It enhances the performance, security, and scalability of applications and websites by caching and delivering content from edge locations worldwide. CloudFront also provides additional features including DDoS protection and integration with other AWS services.
 
-
-
-41. How Does AWS Handle Security In a Multi-Tenant Environment?
+### 41. How Does AWS Handle Security In a Multi-Tenant Environment?
 AWS comes up on utilizing a strong shared responsible architecture that gurantee security in an environment including physical infrastructure with serveral tenants. While customers has to handle managing the security in the cloud, protecting their data, applications, and access restrictions. Multi-tenant setups the benefit from enhancing security with inclusion features such as VPC isolation, IAM, encryption, and auditing.
 
-42. What Is Amazon Kinesis, And How Is It Used For Real-Time Data Streaming?
+### 42. What Is Amazon Kinesis, And How Is It Used For Real-Time Data Streaming?
 Amazon Kinesis is suitable of services which are looking for real-time data streaming. Streaming data ingestion, processing, and analysis are made easier using Kinesis Data Streams, Data Firehose, and Data Analytics. It is useful for benefiting the applications which need real-time analytics, such as monitoring, fraud detection.
 
-43. What Are The Key Considerations For Designing Highly Available Architectures In AWS?
+### 43. What Are The Key Considerations For Designing Highly Available Architectures In AWS?
 Designing highly available architectures in AWS involves in distribution of workloads across multiple Availability Zones (AZs), using Auto Scaling services for dynamic allocation of resources and implementations of redundant and fault-tolerant components. Aside from data replication and load balancing , other factors are also come into account such as utilization management of services that inherently offering high availability , resilience safegaurding against the failures.
 
-44. Describe a VPC Peering Scenario And Its Implementations.
+### 44. Describe a VPC Peering Scenario And Its Implementations.
 AWS comes up with a shared responsibility model , In where AWS will take care the management of cloud Infrastructure and the customers are responsible for securing the applications data within the environment of cloud. AWS assist in providing many compliance certifications and tools such as AWS Artifact for collecting compliance reports. Customers can enhance the security of the application data by implementing security measures such as encryption , access control and audit trails safeguarding compliance with regulatory standards.
 
-Scenario Based AWS Interview Questions
-45. You Are Tasked With Designing A Scalable And Fault-Tolerant Web Application On AWS. How Would You Approach This?
+### Scenario Based AWS Interview Questions
+### 45. You Are Tasked With Designing A Scalable And Fault-Tolerant Web Application On AWS. How Would You Approach This?
 For designing a scalable and fault-tolerant web application on AWS, I would use services such as Amazon EC2 for scaling compute capacity, Amazon RDS or DynamoDB for managing databases, and Amazon S3 for scalable storage. Employing Elastic Load Balancing (ELB) gurantee on unifrom distribution of traffic, while Auto Scaling helps in automatically adjusting the resources utilization in response to demand. Deployments on Multiple Availability Zones and Replication of data safeguards improving the fault tolerance. On usage of services such as CloudFront for content delivery, and CloudWatch for monitoring in the architecture gurantees the high availability and performance.
 
-46. Describe A Scenario Where You Would Choose Amazon RDS Over DynamoDB For a Database Solution.
+### 46. Describe A Scenario Where You Would Choose Amazon RDS Over DynamoDB For a Database Solution.
 Amazon RDS is preferable when their is a need of relational data model, dealing with complex queries or transactions are crucial. It will be suitable choice if the application is looking for flexibility in schema design for handling SQL queries. On the other hand, DynamoDB is best suited for NoSQL usecases such as real-time applications and gaming on handling low-latency requirements with simple queries.
 
-47. Walk Through The Steps To Set Up a VPC With Public And Private Subnets.
+### 47. Walk Through The Steps To Set Up a VPC With Public And Private Subnets.
 In order to set up a AWS VPC, the CIDR block needs to be defined, subnets must be created, route tables should be configured, and NAT and internet gateways need to be set up. A route table needs to be linked to the internet gateway for public subnets, and a NAT gateway should be used for private subnets’ traffic routing. Accordingly, network ACLs and security groups have to be defined. To guarantee the connectivity, configure VPN or VPC peering connections. This configuration permits controlled access while securely isolating resources.
 
-48. Explain How You Would Handle a Sudden Increase In Traffic To Your Application Using AWS Services.
+### 48. Explain How You Would Handle a Sudden Increase In Traffic To Your Application Using AWS Services.
 Auto Scaling is necessary for automatically adjusting utilization of resources based on demand in order to handle a sudden increase in traffic. Try using CloudFront service for content delivery, Amazon RDS or DynamoDB for scalable databases, and Elastic Load Balancing for the distribution of traffic. Utilizing services such as ElastiCache for caching minimizes the demand on backend resources. Route 53 or Global Accelerator services helps in improving the availability using AWS global Infrastructure. Scaling responses can be automated via AWS Lambda functions and CloudWatch alarms, providing a flawless user experience.
 
-49. A Company Wants To Migrate Its On-Premises Servers To AWS. Outline The Steps Involved In This Migration Process.
+### 49. A Company Wants To Migrate Its On-Premises Servers To AWS. Outline The Steps Involved In This Migration Process.
 Examining workloads on-premises and selecting the best migration approach such as lift-and-shift, re-platforming, or re-architecting, and establishing the target architecture on AWS are all crucial steps in the migration process. For a seamless transition of workloads, make use of services like AWS Server Migration Service (SMS) or Database Migration Service (DMS). Following migration, optimize resources, perform DNS record updates, and implement continuous monitoring. To guarantee a successful migration, consider accounting security measures like encryption and Virtual Private Cloud (VPC) setups.
 
-50. How Would You Design A Disaster Recovery Plan For a Critical Application Hosted On AWS?
+### 50. How Would You Design A Disaster Recovery Plan For a Critical Application Hosted On AWS?
 In order to design a disaster recovery plan, creating backups across the regions on replication of important data implementing cross-regions must be implemented. Definition of recovery time objectives (RTO) and recovery point objectives (RPO) must be specified. For the automation of cross-region replication try on using the services like AWS Backup for centralized backup management and AWS Elastic Disaster Recovery (EDR) for automating cross-region replication. Regularly test the plan with services like AWS Disaster Recovery Testing (DRT) to safegaurding the readiness.
 
-51. Discuss A Scenario Where You Would Use AWS Lambda Functions In An Application.
+### 51. Discuss A Scenario Where You Would Use AWS Lambda Functions In An Application.
 AWS Lambda functions are ideal for scenarios that requires serverless, event-driven architecture. It works with principle of Pay as per Run coming to billing section. For example, in a photo-sharing application, Lambda functions can be triggered whenever users uploaded the images. These functions helps in resize the images, update the metadata in DynamoDB, and send the notifications. Lambda’s stateless nature and automatic scaling make it efficient for handling variable workloads without need of manual management of underlying infrastructure.
 
-52. You’re Dealing With Sensitive Data, And The Client Requires End-To-End Encryption. How Would You Implement This In AWS?
+### 52. You’re Dealing With Sensitive Data, And The Client Requires End-To-End Encryption. How Would You Implement This In AWS?
 Implementing end-to-end encryption involves with usage of services such as AWS Key Management Service (KMS) to manage encryption keys. Encrypt data at rest using S3 server-side encryption or RDS encryption. For data in transit, use HTTPS and SSL/TLS protocols. Implement encryption in Lambda functions, EC2 instances, and other services as needed. Strictly manage IAM roles and policies to control access to encryption keys and ensure a secure end-to-end encryption solution.
 
-53. Describe a Situation Where You Would Use AWS Elastic Beanstalk And Its Advantages In That Context.
+### 53. Describe a Situation Where You Would Use AWS Elastic Beanstalk And Its Advantages In That Context.
 AWS Elastic Beanstalk is effective in situations in which quick deployment and administration of applications are essential. For instance, Elastic Beanstalk facilitates capacity provisioning, load balancing, and automatic scaling, which streamlines the deployment of web applications. It is a preferable option for faster deployment because of its benefits, which include simple application upgrades, monitoring integration with CloudWatch, and a variety of supported programming languages.
 
-54. A Company Is Facing High Costs In Its AWS Environment. How Would You Analyze And Optimize The Costs?
+### 54. A Company Is Facing High Costs In Its AWS Environment. How Would You Analyze And Optimize The Costs?
 Using AWS Expense Explorer service to identify expense drivers, AWS Budgets for setting cost thresholds, and Trusted Advisor and other tools to generate cost-saving recommendations are all part of the process of cost analysis and optimization. In order to match resources with demand, use auto-scaling, analyze the instance spots for variable workloads, and use reserved instances for dependable workloads. Reevaluate on usage of serverless options such as Lambda and keep checking on unused resources. Cost-effective resource allocation should be reviewed and modified on a regular basis.
+
+
+### AWS Interview Questions – FAQs
+### What is Amazon EC2?
+EC2 provides virtual servers (instances) to run applications on the cloud, offering scalability and cost-effectiveness.
+### What is a VPC?
+A Virtual Private Cloud (VPC) creates a secure, isolated network environment for your AWS resources within a specific region.
+### What are different EC2 instance pricing models?
+There are three main models: On-Demand (pay-as-you-go), Spot (bid for unused capacity at a discount), and Reserved (commit to an instance for a fixed term for a lower price).
+### What are Security Best Practices for EC2?
+Use IAM for access control, restrict access with security groups, open only necessary ports, and disable password-based logins.
+
+
