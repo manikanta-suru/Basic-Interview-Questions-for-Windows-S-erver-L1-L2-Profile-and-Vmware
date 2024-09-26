@@ -1,4 +1,4 @@
-Amazon Web Services (AWS) stands as the leading cloud service provider globally, offering a wide array of cloud computing services. It’s the preferred choice for top companies like Netflix, Airbnb, Spotify, and many more due to its scalability, reliability, and extensive feature set. AWS was started in 2006 with 3 types of services such as storage, computing, and messaging. After, it enhanced its network by providing all the required services based on the market trends.
+###Amazon Web Services (AWS) stands as the leading cloud service provider globally, offering a wide array of cloud computing services. It’s the preferred choice for top companies like Netflix, Airbnb, Spotify, and many more due to its scalability, reliability, and extensive feature set. AWS was started in 2006 with 3 types of services such as storage, computing, and messaging. After, it enhanced its network by providing all the required services based on the market trends.
 
 Here, we’ll cover the 50+ AWS Interview Questions and Answers that are suitable for both freshers and Experienced professionals. This resource aims to provide you with the knowledge necessary to excel in AWS interviews, covering a broad spectrum of AWS concepts including computing, storage, networking, security, databases, serverless computing, and more.
 
@@ -11,7 +11,8 @@ Intermediate AWS Interview Questions
 Advanced AWS Interview Questions
 Scenario Based AWS Interview Questions
 Basic AWS Interview Questions
-1. What Is AWS And Why Is It So Popular?
+
+### 1. What Is AWS And Why Is It So Popular?
 Amazon Web Services (AWS), is an important cloud computing platform known for its wide service offerings. Its popularity is developed through its scalability, cost-effectiveness, and global infrastructure. Businesses increased the AWS to efficiently scale operations, reduce costs, and innovate rapidly.
 
 2. Explain The Key Components Of AWS.
